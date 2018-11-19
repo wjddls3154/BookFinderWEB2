@@ -14,6 +14,7 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         search(query: "가을", page: 1)
+        
     }
     
     func search(query:String, page:Int) {
