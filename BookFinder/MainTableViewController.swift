@@ -10,6 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     var items:[Any]?
+    var myIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         search(query: "가을", page: 1)
@@ -38,7 +39,7 @@ class MainTableViewController: UITableViewController {
                 //throws 예외처리(항상 try catch문 써야함
                 if let dic = try JSONSerialization.jsonObject(with: dat, options: []) as? [String:Any] {
                     if let books = dic["documents"] as? [Any] {
-                        print(books)
+                        //print(books)
                         items = books
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
@@ -79,6 +80,21 @@ class MainTableViewController: UITableViewController {
         
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        //performSegue(withIdentifier: "segue", sender: self)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+        if let books = items {
+            if let book = books[indexPath.row] as? [String:Any] {
+                if let urlB = book["url"] as? String {
+                    //print(urlB)
+                     vc?.urlC = urlB
+                }
+            }
+        }
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     /*
     // Override to support conditional editing of the table view.

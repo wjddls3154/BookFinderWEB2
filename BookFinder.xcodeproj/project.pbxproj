@@ -12,6 +12,7 @@
 		14676559219913B200668A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14676558219913B200668A44 /* Assets.xcassets */; };
 		1467655C219913B200668A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1467655A219913B200668A44 /* LaunchScreen.storyboard */; };
 		14676564219914E800668A44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14676563219914E800668A44 /* MainTableViewController.swift */; };
+		521FF002219975E000007E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF001219975E000007E27 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1467655B219913B200668A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1467655D219913B200668A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14676563219914E800668A44 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		521FF001219975E000007E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1467655A219913B200668A44 /* LaunchScreen.storyboard */,
 				1467655D219913B200668A44 /* Info.plist */,
 				14676563219914E800668A44 /* MainTableViewController.swift */,
+				521FF001219975E000007E27 /* ViewController.swift */,
 			);
 			path = BookFinder;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521FF002219975E000007E27 /* ViewController.swift in Sources */,
 				14676564219914E800668A44 /* MainTableViewController.swift in Sources */,
 				14676552219913B000668A44 /* AppDelegate.swift in Sources */,
 			);
